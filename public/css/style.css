@@ -191,3 +191,60 @@ h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #fff;
 }
+
+/* Media Quries */
+
+@media only screen and (max-width: 600px) {
+    .navBar{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .weatherInput{
+        width: 21rem;
+    }
+    .weatherInput input{
+        padding: 12px;
+        font-size: 22px;
+
+    }
+    .weatherInput .submit{
+        padding: 12px;
+        font-size: 18px;
+    }
+    .weatherOutput{
+        width: 21rem;
+        min-height: 250px;
+    }
+    .weatherOutput .dateTime{
+        font-size: 18px;
+    }
+    .weatherDataOutput .locationName{
+        font-size: 25px;
+    }
+    .weatherDataOutput .temperature{
+        font-size: 62px;
+    }
+    .aboutContainer{
+        flex-wrap: wrap;
+    }
+    .aboutContainer .imageBox, .contentBox{
+        width: 100%;
+        text-align: center;
+    }
+    .imageBox{
+        margin-bottom: 10px;
+    }
+    .imageBox img{
+        width: 90%;
+    }
+    .contentBox h2{
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
+    .contentBox p{
+        margin-bottom: 13px;
+        font-size: 13px;
+    }
+
+  }

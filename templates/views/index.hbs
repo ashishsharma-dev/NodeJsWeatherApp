@@ -2,47 +2,27 @@
 <html lang="en">
 <head>
     {{>header}}
-    <title>Weather App</title>
+    <title>About us</title>
 </head>
 <body>
-    <div class="container weatherContainer">
-        {{!-- <div class="nav">
-            <nav class="navBar">
-                <a class="brand" href="#">MyWeatherApp</a>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Weather</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </nav>
-        </div> --}}
+
+    <div class="wrapperContainer">
 
         {{>nav}}
+    <div class="aboutContainer">
 
-        <div class="weatherInput">
-            <input type="text" name="text" id="weatherData">
-            <a class="submit">Search</a>
+
+        <div class="imageBox">
+            <img src="imgs/weather.svg" alt="userImg">
         </div>
-
-        <div class="weatherOutput">
-            <div class="dateTime">
-                <div class="day">Saturday</div>
-                <div class="time">23:12 PM</div>
-            </div>
-            <div class="weatherDataOutput">
-                <div class="locationName">
-                    Agra, IN
-                </div>
-                <div class="temperature">
-                35.5&deg;C
-                <i class="fa fa-cloud"></i>
-                </div>
-            </div>
+        <div class="contentBox">
+            <h2>Get the <span>Real Time Weather Data</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae labore soluta repellat! Sunt non molestias atque quaerat repellendus dicta praesentium, consequatur porro nobis culpa quam obcaecati aliquam modi, cum voluptate?</p>
+            <a href="/weather" class="contactMe">Check Now!</a>
         </div>
     </div>
-
+    </div>
     {{>footer}}
-    <script src="js/main.js">
-    </script>
+
 </body>
 </html>

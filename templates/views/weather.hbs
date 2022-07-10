@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+    <title>Get Worldwide Weather Data</title>
+</head>
+<body>
+    <div class="container weatherContainer">
+
+        {{>nav}}
+
+        <div class="weatherInput">
+            <input placeholder="Enter City Name" type="text" name="text" id="weatherData">
+            <a class="submit">Search</a>
+        </div>
+
+        <div class="weatherOutput">
+            <div class="dateTime">
+                <div class="day"></div>
+                <div class="time"></div>
+            </div>
+            <div class="weatherDataOutput">
+                <div class="locationName">
+                    
+                </div>
+                <div class="temperature">
+                {{!-- 35.5&deg;C --}}
+                <i class="fa fa-cloud"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+    <script src="js/main.js">
+    </script>
+</body>
+</html>
