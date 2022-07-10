@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container weatherContainer">
+        {{!-- <div class="nav">
+            <nav class="navBar">
+                <a class="brand" href="#">MyWeatherApp</a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Weather</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div> --}}
+
+        {{>nav}}
+
+        <div class="weatherInput">
+            <input type="text" name="text" id="weatherData">
+            <a class="submit">Search</a>
+        </div>
+
+        <div class="weatherOutput">
+            <div class="dateTime">
+                <div class="day">Saturday</div>
+                <div class="time">23:12 PM</div>
+            </div>
+            <div class="weatherDataOutput">
+                <div class="locationName">
+                    Agra, IN
+                </div>
+                <div class="temperature">
+                35.5&deg;C
+                <i class="fa fa-cloud"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+    <script src="js/main.js">
+    </script>
+</body>
+</html>
